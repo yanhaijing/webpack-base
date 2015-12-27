@@ -1,0 +1,11 @@
+{
+  "name": "webpack-base",
+  "version": "0.1.0",
+  "description": "## 运行",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yanhaijing",
+  "license": "MIT"
+}
