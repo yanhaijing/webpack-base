@@ -9,10 +9,13 @@ module.exports = {
         filename: '[name].js'
     },
     module: {
-        loaders: []
+        loaders: [
+            { test: /\.css$/, loader: 'style-loader!css-loader' },
+            { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' }
+        ]
     },
     resolve: {
         // 现在可以写 require('file') 代替 require('file.coffee')
-        extensions: ['', '.js']
+        extensions: ['', '.js', '.less', '.css']
     }
 };
